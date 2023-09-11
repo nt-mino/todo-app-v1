@@ -11,7 +11,6 @@ const Page = async () => {
         <h1 className="text-[24px] font-bold">TODO一覧</h1>
         <AddTodoForm />
       </div>
-      {/* TODO LIST */}
       <div className="max-w-[800px] w-full mx-auto">
         <TodoTable todos={todos} />
       </div>

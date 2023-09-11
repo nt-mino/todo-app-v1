@@ -7,7 +7,6 @@ interface Props {
 }
 const Page = async ({ params }: { params: Props }) => {
   const todo = await getTodo(params)
-  console.log(todo)
 
   return (
     <div className="p-12">
@@ -15,7 +14,7 @@ const Page = async ({ params }: { params: Props }) => {
         <h1 className="text-[24px] font-bold">TODO詳細</h1>
         <DeleteTodo />
       </div>
-      <div className="">
+      <div className="max-w-[800px] w-full mx-auto">
         <DetailTodo todo={todo} />
       </div>
     </div>
