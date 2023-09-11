@@ -6,7 +6,7 @@ const drizzleConfig = {
   breakpoints: true,
   driver: "pg",
   dbCredentials: {
-    connectionString: "postgresql://postgres:ELXjJFXiZewVVAQS@db.umnfxfyhunexfjjfukgq.supabase.co:5432/postgres",
+    connectionString: "",
   },
 } satisfies Config
 
