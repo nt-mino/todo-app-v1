@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db:generate": "pnpm drizzle-kit generate:pg --config drizzle.config.ts",
-    "db:push": "pnpm drizzle-kit push:pg --config drizzle.config.ts"
+    "db:generate": "yarn drizzle-kit generate:pg --config drizzle.config.ts",
+    "db:push": "yarn drizzle-kit push:pg --config drizzle.config.ts"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.0.4",
@@ -38,5 +38,6 @@
   },
   "devDependencies": {
     "drizzle-kit": "^0.19.13"
-  }
+  },
+  "packageManager": "yarn@4.0.2"
 }
