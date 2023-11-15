@@ -6,7 +6,7 @@ const drizzleConfig = {
   breakpoints: true,
   driver: "pg",
   dbCredentials: {
-    connectionString: "",
+    connectionString: process.env.DB_CONNECTION_STRING!,
   },
 } satisfies Config
 
