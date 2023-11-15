@@ -5,9 +5,9 @@ import { NextResponse } from "next/server"
 
 export async function POST(request: Request) {
   const body = await request.json()
-  const { id, title, description, author } = body
+  const { id, title, category, description, author } = body
 
-  const todo = await db.update(todos).set({ title: title, description: description, author: author }).where(eq(id, id)).returning()
+  const todo = await db.update(todos).set({ title, category, description, author }).where(eq(id, id)).returning()
 
   return NextResponse.json({ todo })
 }
