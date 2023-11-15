@@ -18,7 +18,7 @@ export const TodoTable = ({ todos }: Props) => {
       <TableBody>
         {todos.map(todo => {
           return (
-            <TableRow>
+            <TableRow key={todo.id}>
               <TableCell className="cursor-pointer">
                 <Link href={`/${"1"}`}>
                   <div className="flex flex-col">
